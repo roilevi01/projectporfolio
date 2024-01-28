@@ -1,0 +1,171 @@
+@media (max-width: 900px) {
+  header {
+    width: 250%;
+    height: 50%;
+  }
+
+  .cta button {
+    background-color: whitesmoke;
+    width: 110px;
+    height: 70px;
+
+    border-radius: 0;
+    padding: 0;
+  }
+
+  nav a {
+    font-size: 35px;
+  }
+
+  nav ul {
+    margin: 10px;
+    justify-content: space-between;
+  }
+
+  .Logo {
+    font-size: 50px;
+    flex: 1;
+    font-family: fantasy;
+  }
+  .logo img {
+    display: none;
+  }
+
+  .portfolio {
+    margin: 70%;
+  }
+  .portfolio h1 {
+    font-size: 120px;
+  }
+
+  .portfolio p {
+    display: flex;
+    font-size: 50px;
+    flex-direction: row;
+  }
+  .Logo2 {
+    display: none;
+  }
+
+  .myprofile1 {
+    display: none;
+  }
+
+  .myprofile2 {
+    display: flex;
+    position: relative;
+    margin-left: 60%;
+    margin-top: 35%;
+    border-radius: 50px 50px 50px 50px;
+    padding: 5px;
+    box-shadow: 3px 2px 5px 5px whitesmoke;
+
+    background-color: black;
+    width: 500px;
+  }
+
+  h2 {
+    font-size: 70px;
+    text-align: center;
+    text-shadow: 2px 3px 5px white;
+  }
+
+  .text-main {
+    font-size: 45px;
+
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    top: 0;
+    margin: 7rem;
+    padding: 10px;
+
+    width: 850px;
+    height: 850px;
+  }
+
+  .text-main button {
+    position: relative;
+    margin-left: 17rem;
+
+    width: 300px;
+    height: 60px;
+    font-size: 40px;
+  }
+
+  .container {
+    width: 100%;
+    margin: 70%;
+  }
+
+  .card {
+    height: 800px;
+    width: 130%;
+  }
+
+  .card img {
+    height: 50%;
+  }
+
+  .btn-card {
+    width: 300px;
+    height: 85px;
+  }
+
+  .btn-card > a {
+    font-size: 35px;
+  }
+
+  section {
+    width: 250vw;
+  }
+  section img {
+    display: none;
+  }
+
+  section div {
+    margin: 0;
+    position: relative;
+    left: 0;
+  }
+
+  section input,
+  textarea {
+    width: 120%;
+    height: 85px;
+    padding: 10px;
+    margin: 5%;
+  }
+  form,
+  p,
+  h3 {
+    font-size: 50px;
+  }
+
+  .send-btn {
+    width: 70%;
+    margin: auto;
+  }
+
+  .box-icon {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    grid-template-columns: 0;
+    width: 67rem;
+    text-align: center;
+    font-size: 10rem;
+  }
+
+  .box-icon i {
+    font-size: 100px;
+  }
+
+  .copyright {
+    height: 40%;
+  }
+
+  .copyright p {
+    font-size: 50px;
+  }
+}

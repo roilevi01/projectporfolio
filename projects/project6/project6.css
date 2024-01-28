@@ -1,0 +1,133 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+  background-color: white;
+}
+.container {
+  display: grid;
+  gap: 0.5rem;
+  margin-top: 15rem;
+  margin-bottom: 15rem;
+  grid-template-columns: repeat(4, 305px);
+  width: 90vw;
+}
+.blue-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  grid-column: 3/5;
+  grid-row: 1/3;
+  background-color: #020253;
+  width: 613px;
+  height: 562px;
+}
+.blue-box > h1 {
+  color: #0ee1da;
+  font: normal normal bold 61px/80px Assistant;
+
+  text-align: center;
+}
+.blue-box > p {
+  direction: rtl;
+  font: normal normal normal 20px/26px Assistant;
+  text-align: center;
+  color: white;
+}
+.img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: opacity(1);
+}
+
+.form {
+  font: normal normal normal 20px/26px Assistant;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  grid-column: 1/3;
+  grid-row: 4/7;
+  background-color: #8e097c;
+  width: 613px;
+  height: 852px;
+}
+
+.form > h1 {
+  margin-bottom: 10px;
+  color: #ffffff;
+  text-align: right;
+}
+
+label {
+  direction: rtl;
+  display: flex;
+  text-align: center;
+  color: #0ee1da;
+}
+
+#name,
+#email {
+  margin-bottom: 10px;
+  width: 500px;
+  height: 60px;
+  border: none;
+  border-bottom: 5px solid #0ee1da;
+}
+
+#free-text {
+  width: 500px;
+  height: 172px;
+  border: none;
+  border-bottom: 5px solid #0ee1da;
+}
+#btn {
+  margin-top: 10px;
+  background-color: #0ee1da;
+  color: #011560;
+  width: 501px;
+  height: 60px;
+  font-size: 24px;
+  border: none;
+}
+
+@media (max-width: 900px) {
+  .container {
+    flex-direction: column;
+
+    margin: 0;
+    grid-template-columns: repeat(2, 0.2fr);
+    grid-template-rows: repeat(11, 0.3fr);
+    width: 100vw;
+  }
+  .blue-box {
+    grid-column: 1/3;
+    grid-row: 1/2;
+
+    width: 613px;
+    height: 400px;
+  }
+  .blue-box > h1 {
+    font: normal normal bold 50px/81px Assistant;
+  }
+  .blue-box > p {
+    font: normal normal normal 25px/26px Assistant;
+  }
+
+  .form {
+    grid-column: 1/3;
+    grid-row: 6/7;
+    background-color: #8e097c;
+    width: 613px;
+    height: 852px;
+  }
+}
